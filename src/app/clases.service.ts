@@ -1,0 +1,25 @@
+import { Injectable } from '@angular/core';
+import {Http, Response} from '@angular/http';
+import  {Observable} from 'rxjs/Rx';
+import  'rxjs/add/operator/map';
+import  'rxjs/add/operator/catch';
+
+@Injectable()
+export class ClasesService {
+
+  constructor (private http: Http) {
+
+  }
+  getClasesAPI(): Observable<any>{
+    return this.http.get("http://localhost:3000/clases")
+      .map( (res: Response) => res.json() )
+      .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }
+  getClases() : string[]{
+    return ['algebra', 'programacion', 'robótica', 'ASE3', 'otra clase'];
+  }
+
+  createClase(newClasCode : string, newName : string) : Observable<any> {
+    return this.http.post("http://localhost:3000/clases", {name: newName, clasCode: newClasCode})
+  }
+}

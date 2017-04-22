@@ -1,0 +1,34 @@
+<!--<h1 class="firstItem">{{titulo}}</h1>
+{{'Tengo ' + clases.length + ' clases'}}
+<ul *ngIf="clases.length >= 1">
+  <li class="secondItem" *ngFor="let clase of clases">
+    {{clase}}
+  </li>
+</ul>
+
+<div [ngSwitch]="market">
+  <div *ngSwitchCase="'NYSE'">New York Stock E.</div>
+  <div *ngSwitchCase="'LSE'">London Stock E.</div>
+  <div *ngSwitchDefault>No se encontro Match</div>
+</div>-->
+
+<h2>Agregar Clase</h2>
+Código Clase: <input #newClasCode>
+Nombre de la clase: <input #newName>
+<button type="button" class="btn btn-primary" (click)="createClase(newClasCode.value, newName.value)">Crear clase</button>
+<div class="m-x-auto p-a-2">
+  <!--<table class="table table-striped table-inverse table-hover table-sm center">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>NAME</th>
+      <th>CODE</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let clase of clases">
+      <td>{{clase.id}}</td>
+      <td>{{clase.name}}</td>
+      <td>{{clase.clasCode}}</td>
+    </tr>
+  </table>-->
+</div>
