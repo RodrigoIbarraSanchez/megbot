@@ -14,6 +14,7 @@ chris.save(function (err) {
 
     console.log('Usuario guardado satisfactoriamente')
 })
+*/
 
 // get all the users
 User.find({}, function(err, users) {
@@ -22,14 +23,14 @@ User.find({}, function(err, users) {
     // object of all the users
     console.log(users);
 });
-*/
+
 
 router.get('/', function(req, res, next) {
 
 });
 
 router.post('/', function(req, res, next) {
-    
+
     var email = req.body.email
     var firstName = req.body.firstName
     var lastName = req.body.lastName

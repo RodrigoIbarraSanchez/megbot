@@ -22,7 +22,7 @@ export class ClasesComponent implements OnInit {
     this.clasesService.getClasesAPI()
       .subscribe(
         data => this.clases = data,
-        error => console.log('Server Error')
+        error => console.log('Server Error' + error)
       );
   }
 

@@ -1,9 +1,13 @@
 // Get dependencies
 const express = require('express');
+router = express.Router();
+var morgan = require("morgan")
 const path = require('path');
-const http = require('http');
-const bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var bodyParser = require("body-parser")
+var cors = require('cors')
+const http = require('http');
+var User = require('./models/user');
 
 // Get our API routes
 var apiRouter = require('./routes/apiRouter');
@@ -16,14 +20,14 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   // we're connected!
-  console.log('Conectado a la BD ' + mongoose.connection.readyState)
+  console.log('Conectado a la BD')
 });
 
 // Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Point static path to dist
+// Point static path to dist - Public folder
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Set our api routes
@@ -33,7 +37,6 @@ app.use('/api', apiRouter);
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
-
 /**
  * Get port from environment and store in Express.
  */
@@ -43,6 +46,14 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
+app.get('/horario', function (req, res) {
+  User.find({}, function(err, users) {
+    if (err) throw err;
+    console.log(res + users);
+  });
+})
+
+
 const server = http.createServer(app);
 
 /**

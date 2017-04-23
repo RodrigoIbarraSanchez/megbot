@@ -11,7 +11,7 @@ export class ClasesService {
 
   }
   getClasesAPI(): Observable<any>{
-    return this.http.get("http://localhost:3000/clases")
+    return this.http.get("http://localhost:3200")
       .map( (res: Response) => res.json() )
       .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
   }
@@ -20,6 +20,6 @@ export class ClasesService {
   }
 
   createClase(newClasCode : string, newName : string) : Observable<any> {
-    return this.http.post("http://localhost:3000/clases", {name: newName, clasCode: newClasCode})
+    return this.http.post("http://localhost:3200/horario", {name: newName, clasCode: newClasCode})
   }
 }
