@@ -13,12 +13,17 @@
 </div>-->
 
 <h2>Agregar Clase</h2>
-Código Clase: <input #newClasCode>
+<!--Código Clase: <input #newClasCode>
 Nombre de la clase: <input #newName>
-<button type="button" class="btn btn-primary" (click)="createClase(newClasCode.value, newName.value)">Crear clase</button>
+<button type="button" class="btn btn-primary" (click)="createClase(newClasCode.value, newName.value)">Crear clase</button>-->
 <div class="m-x-auto p-a-2">
   {{titulo}}
-  <table class="table table-striped table-hover table-sm center">
+  <ul>
+    <!--<li *ngFor='let clase for clases'>
+      {{clase.className}}
+    </li>-->
+  </ul>
+  <!--<table class="table table-striped table-hover table-sm center">
     <thead class="thead-inverse">
     <tr>
       <th>Nombre</th>
@@ -27,7 +32,6 @@ Nombre de la clase: <input #newName>
     <tr *ngFor="let clase of clases">
       <td>{{clase}}</td>
     </tr>
-  </table>
-  <p style="border: solid 1px red">{{users[0].firstName}}</p>
+  </table>-->
 
 </div>

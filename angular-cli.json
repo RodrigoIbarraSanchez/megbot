@@ -24,7 +24,9 @@
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
         "../node_modules/tether/dist/js/tether.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../js/jquery.flexslider.js",
+        "../js/jquery-3.2.1.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

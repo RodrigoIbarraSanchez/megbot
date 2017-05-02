@@ -9,17 +9,26 @@ export class ClasesService {
 
   constructor (private http: Http) {
 
-  }
-  getClasesAPI(): Observable<any>{
-    return this.http.get("http://localhost:3200")
+   }
+
+  getClases(): Observable<any>{
+    return this.http.get("http://localhost:5000/api/clases")
       .map( (res: Response) => res.json() )
       .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
   }
-  getClases() : string[]{
+
+
+
+  /*getClasesAPI(): Observable<any>{
+    return this.http.get("http://localhost:5000")
+      .map( (res: Response) => res.json() )
+      .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }*/
+  /*getClases() : string[]{
     return ['algebra', 'programacion', 'robótica', 'ASE3', 'otra clase'];
   }
 
   createClase(newClasCode : string, newName : string) : Observable<any> {
     return this.http.post("http://localhost:3200/horario", {name: newName, clasCode: newClasCode})
-  }
+  }*/
 }
