@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ClasesService } from '../clases.service';
 
+class Clase{
+  _id: string;
+  name: string;
+}
+
 @Component({
   selector: 'clases',
   templateUrl: './clases.component.html',
@@ -9,7 +14,7 @@ import { ClasesService } from '../clases.service';
 
 export class ClasesComponent implements OnInit {
 
-  clases : string[];
+  clases: Array<Clase>;
 
   ngOnInit() {
     this.getAllClases();
@@ -21,8 +26,8 @@ export class ClasesComponent implements OnInit {
   getAllClases(){
     this.clasesService.getClases()
       .subscribe(
-        data => console.log(JSON.stringify(data)),
-        //data => this.clases = data.clases,
+        //data => console.log(JSON.stringify(data)),
+        data => {console.log(data);this.clases = data["clases"];}, //this.clases = data["clases"],
         error => console.log('Server Error' + error)
       );
   }

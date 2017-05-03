@@ -12,26 +12,28 @@
   <div *ngSwitchDefault>No se encontro Match</div>
 </div>-->
 
-<h2>Agregar Clase</h2>
+<div class="container">
+  <h2>Clases:</h2>
+  <div class="m-x-auto p-a-2">
+    {{titulo}}
+    <ul>
+      <li *ngFor="let clase of clases">
+        {{clase.name}}
+      </li>
+    </ul>
+  </div>
+</div>
+
 <!--Código Clase: <input #newClasCode>
 Nombre de la clase: <input #newName>
 <button type="button" class="btn btn-primary" (click)="createClase(newClasCode.value, newName.value)">Crear clase</button>-->
-<div class="m-x-auto p-a-2">
-  {{titulo}}
-  <ul>
-    <!--<li *ngFor='let clase for clases'>
-      {{clase.className}}
-    </li>-->
-  </ul>
-  <!--<table class="table table-striped table-hover table-sm center">
-    <thead class="thead-inverse">
-    <tr>
-      <th>Nombre</th>
-    </tr>
-    </thead>
-    <tr *ngFor="let clase of clases">
-      <td>{{clase}}</td>
-    </tr>
-  </table>-->
-
-</div>
+<!--<table class="table table-striped table-hover table-sm center">
+  <thead class="thead-inverse">
+  <tr>
+	<th>Nombre</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let clase of clases">
+	<td>{{clase}}</td>
+  </tr>
+</table>-->
