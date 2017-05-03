@@ -12,17 +12,84 @@
   <div *ngSwitchDefault>No se encontro Match</div>
 </div>-->
 
-<div class="container">
-  <h2>Clases:</h2>
-  <div class="m-x-auto p-a-2">
-    {{titulo}}
+<div class="left">
+  <div class="separador">
+    <nav>
+      <div>
+        <div>
+          <a href="" class="logo">
+
+          </a>
+        </div>
+      </div>
+    </nav>
     <ul>
-      <li *ngFor="let clase of clases">
-        {{clase.name}}
+      <li class="elements active">
+        <a href="/horario">Horaio</a>
+      </li>
+      <li class="elements">
+        <a href="/ToDo's">ToDo's</a>
+      </li>
+      <li class="elements">
+        <a href="/logros">Logros</a>
       </li>
     </ul>
   </div>
 </div>
+<div class="right">
+  <div class="container">
+    <div class="row">
+        <div class="m-x-auto p-a-2">
+          <ul style="margin-top: 50px ">
+            <table class="table-fill">
+              <thead>
+                <tr>
+                  <th class="text-left">Hora</th>
+                  <th class="text-left">Clase</th>
+                </tr>
+              </thead>
+              <tr *ngFor="let clase of clases">
+                <td> 00:00</td>
+                <td class="text-left">{{clase.name}}</td>
+              </tr>
+            </table>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <!--<table class="table-fill">
+    <thead>
+    <tr>
+      <th class="text-left">Hora</th>
+      <th class="text-left">Clase</th>
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+    <tr>
+      <td class="text-left">January</td>
+      <td class="text-left">$ 50,000.00</td>
+    </tr>
+    <tr>
+      <td class="text-left">February</td>
+      <td class="text-left">$ 10,000.00</td>
+    </tr>
+    <tr>
+      <td class="text-left">March</td>
+      <td class="text-left">$ 85,000.00</td>
+    </tr>
+    <tr>
+      <td class="text-left">April</td>
+      <td class="text-left">$ 56,000.00</td>
+    </tr>
+    <tr>
+      <td class="text-left">May</td>
+      <td class="text-left">$ 98,000.00</td>
+    </tr>
+    </tbody>
+  </table>
+</div>-->
+
+
 
 <!--Código Clase: <input #newClasCode>
 Nombre de la clase: <input #newName>
