@@ -13,13 +13,6 @@ const app = express();
 // Point static path to dist - Public folder
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-type, Authorization, x-access-token');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  next();
-});
-
 /**
  * Get port from environment and store in Express.
  */
