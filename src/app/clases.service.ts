@@ -12,7 +12,7 @@ export class ClasesService {
    }
 
   getClases(): Observable<any>{
-    return this.http.get("https://hello-human-bot.herokuapp.com/api/clases")
+    return this.http.get("https://apimegbot.herokuapp.com/api/clases/ ")
       .map( (res: Response) => res.json() )
       .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
   }
