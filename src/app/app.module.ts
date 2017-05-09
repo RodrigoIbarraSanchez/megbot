@@ -8,7 +8,6 @@ import { ClasesComponent } from './clases/clases.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClasesService } from './clases.service';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     HttpModule,
     routing,
-    NgbModule.forRoot(),
-    CommonModule
+    NgbModule.forRoot()
   ],
   providers: [
     ClasesService

@@ -1,22 +1,6 @@
 webpackJsonp([3,5],{
 
-/***/ 1062:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "background-header.jpg";
-
-/***/ }),
-
-/***/ 1066:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(507);
-module.exports = __webpack_require__(506);
-
-
-/***/ }),
-
-/***/ 468:
+/***/ 220:
 /***/ (function(module, exports) {
 
 /*
@@ -73,7 +57,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 502:
+/***/ 263:
 /***/ (function(module, exports) {
 
 /*
@@ -326,16 +310,16 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 506:
+/***/ 267:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(785);
+var content = __webpack_require__(435);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(502)(content, {});
+var update = __webpack_require__(263)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -353,16 +337,16 @@ if(false) {
 
 /***/ }),
 
-/***/ 507:
+/***/ 268:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(786);
+var content = __webpack_require__(436);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(502)(content, {});
+var update = __webpack_require__(263)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -380,10 +364,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 785:
+/***/ 435:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(468)();
+exports = module.exports = __webpack_require__(220)();
 // imports
 
 
@@ -395,20 +379,36 @@ exports.push([module.i, "/*!\n * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.
 
 /***/ }),
 
-/***/ 786:
+/***/ 436:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(468)();
+exports = module.exports = __webpack_require__(220)();
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nhtml, body {\n  height: 100%\n}\n.left {\n  background-color: #242424;\n  width: 15.5%;\n  height: 100%;\n  margin: 0;\n  box-shadow: 2px 0px 20px #101010;\n  float: left;\n}\n.right {\n  background-color: rgba(238, 238, 238, 0.2);\n  width: 84.5%;\n  height: 100%;\n  margin: 0;\n  float: right;\n}\n.right header {\n  width: 100%;\n  height: 45px;\n  background-color: rgba(255, 255, 255, 0.82);\n  padding: 10px;\n  font-family: \"Open Sans\", sans-serif;\n  position: fixed;\n  z-index: 20;\n  line-height: 30px;\n  color: #999;\n  font-size: 18px;\n  box-shadow: 2px 0px 20px #101010;\n}\n.right header h3 {\n  margin-left: 10px;\n}\n.separador {\n  border-top: 10px solid #378fc3;\n}\n.left img {\n  width: 135px;\n  margin: 0px auto 10px auto;\n  display: block;\n}\n.fotoPerfil {\n  width: 60px!important;\n  margin-top: -20px!important;\n  margin-bottom: 10px!important;\n  border-radius: 100%;\n  border: solid 3px white;\n}\n.left h3 {\n  color: white;\n}\n.logo {\n  margin: 20px 0 10px 15px !important;\n  padding: 3px;\n}\n.logoHead {\n  width: 100%;\n  border-bottom: 1px solid #5d5c5c;\n}\n.navbar-brand {\n  height: 50px;\n  padding: 15px 15px;\n  font-size: 18px;\n  line-height: 20px;\n}\n.nombre {\n  color: white;\n  font-family: Roboto;\n  text-align: center;\n}\nul {\n  text-decoration: none!important;\n  width: 100%;\n}\n.elements {\n  text-align: left;\n  color: gray;\n  font-family: Roboto;\n  border-top: 1px solid #2d2d2d;\n  padding: 10px;\n}\n.elements a {\n  text-decoration: none!important;\n  color: #aaa;\n}\n.active {\n  border-top: 1px solid #2d2d2d!important;\n  background-color: #111111;\n  border-left: 5px solid #378fc3\n}\n.nav>li>a:focus, .nav>li>a:hover {\n  text-decoration: none;\n  background-color: #212121!important;\n}\n\n.firstItem {\n  margin-top: 85px;\n  margin-left: 30px;\n}\n.secondItem {\n  margin-top: 25px;\n  margin-left: 30px;\n}\n.logo-img {\n  width: 112px;\n  margin-left: -30px;\n  margin-top: -17px;\n}\n.logo-img-footer {\n  width: 150px;\n  margin-left: -30px;\n  padding-top: 20px;\n}\n.BGimage{\n  background: url(" + __webpack_require__(1062) + ") no-repeat center center fixed;\n  height: 500px;\n  background-size: cover;\n}\n.footer {\n  height: 200px;\n  background: black;\n}\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nhtml, body {\n  height: 100%\n}\n.left {\n  background-color: #242424;\n  width: 15.5%;\n  height: 100%;\n  margin: 0;\n  box-shadow: 2px 0px 20px #101010;\n  float: left;\n}\n.right {\n  background-color: rgba(238, 238, 238, 0.2);\n  width: 84.5%;\n  height: 100%;\n  margin: 0;\n  float: right;\n}\n.right header {\n  width: 100%;\n  height: 45px;\n  background-color: rgba(255, 255, 255, 0.82);\n  padding: 10px;\n  font-family: \"Open Sans\", sans-serif;\n  position: fixed;\n  z-index: 20;\n  line-height: 30px;\n  color: #999;\n  font-size: 18px;\n  box-shadow: 2px 0px 20px #101010;\n}\n.right header h3 {\n  margin-left: 10px;\n}\n.separador {\n  border-top: 10px solid #378fc3;\n}\n.left img {\n  width: 135px;\n  margin: 0px auto 10px auto;\n  display: block;\n}\n.fotoPerfil {\n  width: 60px!important;\n  margin-top: -20px!important;\n  margin-bottom: 10px!important;\n  border-radius: 100%;\n  border: solid 3px white;\n}\n.left h3 {\n  color: white;\n}\n.logo {\n  margin: 20px 0 10px 15px !important;\n  padding: 3px;\n}\n.logoHead {\n  width: 100%;\n  border-bottom: 1px solid #5d5c5c;\n}\n.navbar-brand {\n  height: 50px;\n  padding: 15px 15px;\n  font-size: 18px;\n  line-height: 20px;\n}\n.nombre {\n  color: white;\n  font-family: Roboto;\n  text-align: center;\n}\nul {\n  text-decoration: none!important;\n  width: 100%;\n}\n.elements {\n  text-align: left;\n  color: gray;\n  font-family: Roboto;\n  border-top: 1px solid #2d2d2d;\n  padding: 10px;\n}\n.elements a {\n  text-decoration: none!important;\n  color: #aaa;\n}\n.active {\n  border-top: 1px solid #2d2d2d!important;\n  background-color: #111111;\n  border-left: 5px solid #378fc3\n}\n.nav>li>a:focus, .nav>li>a:hover {\n  text-decoration: none;\n  background-color: #212121!important;\n}\n\n.firstItem {\n  margin-top: 85px;\n  margin-left: 30px;\n}\n.secondItem {\n  margin-top: 25px;\n  margin-left: 30px;\n}\n.logo-img {\n  width: 112px;\n  margin-left: -30px;\n  margin-top: -17px;\n}\n.logo-img-footer {\n  width: 150px;\n  margin-left: -30px;\n  padding-top: 20px;\n}\n.BGimage{\n  background: url(" + __webpack_require__(710) + ") no-repeat center center fixed;\n  height: 500px;\n  background-size: cover;\n}\n.footer {\n  height: 200px;\n  background: black;\n}\n", ""]);
 
 // exports
 
 
+/***/ }),
+
+/***/ 710:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "background-header.jpg";
+
+/***/ }),
+
+/***/ 714:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(268);
+module.exports = __webpack_require__(267);
+
+
 /***/ })
 
-},[1066]);
+},[714]);
 //# sourceMappingURL=styles.bundle.map
