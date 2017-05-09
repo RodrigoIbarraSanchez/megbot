@@ -31,7 +31,7 @@
 }
 
 .headerBG {
-    background: url(../../img/background-header.jpg) no-repeat center center fixed;
+    background: url('http://i829.photobucket.com/albums/zz217/RoYibarra/background-header.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
