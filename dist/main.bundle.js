@@ -228,6 +228,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__ = __webpack_require__(629);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dashboard_dashboard_component__ = __webpack_require__(430);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__clases_service__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -238,6 +239,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -263,7 +265,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_5__app_routing__["a" /* routing */],
-                __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot()
+                __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_10__angular_common__["a" /* CommonModule */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_9__clases_service__["a" /* ClasesService */]
@@ -365,7 +368,7 @@ module.exports = "body {\n    background: rgba(188,152,222,1);\n    background: 
 /***/ 799:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\" style=\"padding: 0\">\n  <nav class=\"navbar navbar-toggleable-md navbar-inverse bg-inverse\" style=\"height: 90px;\">\n    <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo02\" aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <a class=\"navbar-brand\" href=\"#\"><img src=\"../../img/meg-logo.png\" class=\"logo-img\"></a>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo02\">\n      <ul class=\"navbar-nav mr-auto mt-2 mt-md-0\">\n        <li class=\"nav-item\">\n\n        </li>\n      </ul>\n      <form class=\"form-inline my-2 my-lg-0\">\n        <ul class=\"navbar-nav mr-auto mt-2 mt-md-0\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/horario\">Dashboard</a>\n          </li>\n          <li>\n            <button class=\"btn btn-outline-success\" type=\"submit\">Empezar</button>\n          </li>\n        </ul>\n      </form>\n    </div>\n  </nav>\n\n  <router-outlet></router-outlet>\n  <clases></clases>\n</div>\n\n<!--{{titulo}}\n<div class=\"left\">\n  <div class=\"separador\">\n    <a href=\"\" class=\"logo\">\n          <span class=\"logoHead\">\n            <img src=\"http://i68.tinypic.com/o0nns8.png\">\n          </span>\n    </a>\n    <nav>\n      <div>\n        <div>\n          <a href=\"\" class=\"logo\">\n            <img src=\"\" alt=\"\" class=\"fotoPerfil\">\n            <h4 class=\"nombre\">Nombre y Apellido</h4>\n          </a>\n        </div>\n      </div>\n    </nav>\n    <ul class=\"nav nav-pills-pull-right\">\n      <li class=\"elements\">\n        <a routerLink=\"/horario\">Horario</a>\n      </li>\n      <li class=\"elements\">\n        <a href=\"/todos\">ToDo's</a>\n      </li>\n      <li class=\"elements\">\n        <a href=\"/goals\">Goals</a>\n      </li>\n    </ul>\n  </div>\n</div>\n<div class=\"right\">\n  <header>\n    <h3>Título</h3>\n  </header>\n  <div class=\"container\">\n    <div class=\"row\">\n      <router-outlet></router-outlet>\n      &lt;!&ndash;h3 class=\"secondItem\">\n        users[0].firstName\n      </h3&ndash;&gt;\n    </div>\n  </div>\n</div>-->\n\n"
+module.exports = "<div class=\"container-fluid\" style=\"padding: 0\">\n  <nav class=\"navbar navbar-toggleable-md navbar-inverse bg-inverse\" style=\"height: 90px;\">\n    <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo02\" aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <a class=\"navbar-brand\" href=\"#\"><img src=\"../../img/meg-logo.png\" class=\"logo-img\"></a>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo02\">\n      <ul class=\"navbar-nav mr-auto mt-2 mt-md-0\">\n        <li class=\"nav-item\">\n\n        </li>\n      </ul>\n      <form class=\"form-inline my-2 my-lg-0\">\n        <ul class=\"navbar-nav mr-auto mt-2 mt-md-0\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/horario\">Dashboard</a>\n          </li>\n          <li>\n            <button class=\"btn btn-outline-success\" type=\"submit\">Empezar</button>\n          </li>\n        </ul>\n      </form>\n    </div>\n  </nav>\n\n  <router-outlet></router-outlet>\n</div>\n\n<!--{{titulo}}\n<div class=\"left\">\n  <div class=\"separador\">\n    <a href=\"\" class=\"logo\">\n          <span class=\"logoHead\">\n            <img src=\"http://i68.tinypic.com/o0nns8.png\">\n          </span>\n    </a>\n    <nav>\n      <div>\n        <div>\n          <a href=\"\" class=\"logo\">\n            <img src=\"\" alt=\"\" class=\"fotoPerfil\">\n            <h4 class=\"nombre\">Nombre y Apellido</h4>\n          </a>\n        </div>\n      </div>\n    </nav>\n    <ul class=\"nav nav-pills-pull-right\">\n      <li class=\"elements\">\n        <a routerLink=\"/horario\">Horario</a>\n      </li>\n      <li class=\"elements\">\n        <a href=\"/todos\">ToDo's</a>\n      </li>\n      <li class=\"elements\">\n        <a href=\"/goals\">Goals</a>\n      </li>\n    </ul>\n  </div>\n</div>\n<div class=\"right\">\n  <header>\n    <h3>Título</h3>\n  </header>\n  <div class=\"container\">\n    <div class=\"row\">\n      <router-outlet></router-outlet>\n      &lt;!&ndash;h3 class=\"secondItem\">\n        users[0].firstName\n      </h3&ndash;&gt;\n    </div>\n  </div>\n</div>-->\n\n"
 
 /***/ }),
 
