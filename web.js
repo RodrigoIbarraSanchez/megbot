@@ -8,19 +8,6 @@ var bodyParser = require("body-parser")
 var cors = require('cors')
 const http = require('http');
 
-const forceSSL = function() {
-  return function (req, res, next) {
-    if (req.headers['x-forwarded-proto'] !== 'https') {
-      return res.redirect(
-        ['https://', req.get('Host'), req.url].join('')
-      );
-    }
-    next();
-  }
-}
-
-app.use(forceSSL());
-
 const app = express();
 
 // Point static path to dist - Public folder
