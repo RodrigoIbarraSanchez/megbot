@@ -37,26 +37,34 @@
   </div>
 </div>
 <div class="right">
-  <div class="container">
-    <div class="row">
-        <div class="m-x-auto p-a-2">
-          <ul style="margin-top: 50px ">
-            <table class="table-fill">
-              <thead>
-                <tr>
-                  <th class="text-left">Hora</th>
-                  <th class="text-left">Clase</th>
-                </tr>
-              </thead>
-              <tr *ngFor="let clase of clases">
-                <td> 00:00</td>
-                <td class="text-left">{{clase.name}}</td>
-              </tr>
-            </table>
-          </ul>
-        </div>
+    <div class="m-x-auto p-a-2">
+      <ul>
+        <table class="table-fill">
+          <thead>
+            <tr>
+              <th class="text-left bordeArriba" style="width: 50px">Hora</th>
+              <th class="text-left bordeArriba" style="width: 50px">Lunes</th>
+              <th class="text-left bordeArriba" style="width: 50px">Martes</th>
+              <th class="text-left bordeArriba" style="width: 50px">Miércoles</th>
+              <th class="text-left bordeArriba" style="width: 50px">Jueves</th>
+              <th class="text-left bordeArriba" style="width: 50px">Viernes</th>
+              <th class="text-left bordeArriba" style="width: 50px">Sábado</th>
+              <th class="text-left bordeArriba" style="width: 50px">Domingo</th>
+            </tr>
+          </thead>
+          <tr *ngFor="let clase of clases">
+            <td> 00:00</td>
+            <td class="text-left">{{clase.name}}</td>
+            <td class="text-left">{{clase.name}}</td>
+            <td class="text-left">{{clase.name}}</td>
+            <td class="text-left">{{clase.name}}</td>
+            <td class="text-left">{{clase.name}}</td>
+            <td class="text-left">{{clase.name}}</td>
+            <td class="text-left">{{clase.name}}</td>
+          </tr>
+        </table>
+      </ul>
     </div>
-  </div>
   <!--<table class="table-fill">
     <thead>
     <tr>

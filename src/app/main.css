@@ -176,7 +176,7 @@
     padding-right: 15px;
 }
 
-div.bhoechie-tab-menu div.list-group>a.active, div.bhoechie-tab-menu div.list-group>a.active .glyphicon, div.bhoechie-tab-menu div.list-group>a.active .fa {
+div.bhoechie-tab-menu divtlist-group>a.active, div.bhoechie-tab-menu div.list-group>a.active .glyphicon, div.bhoechie-tab-menu div.list-group>a.active .fa {
     color: white;
     text-decoration: underline;
 }

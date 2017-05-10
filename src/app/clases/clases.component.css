@@ -1,6 +1,6 @@
 .left {
   background-color: #242424;
-  width: 15.5%;
+  width: 10%;
   height: 100em;
   margin: 0;
   box-shadow: 2px 0px 20px #101010;
@@ -8,7 +8,7 @@
 }
 .right {
   background-color: rgba(238, 238, 238, 0.2);
-  width: 84.5%;
+  width: 90%;
   height: 135%;
   margin: 0;
   float: right;
@@ -28,6 +28,10 @@
 }
 .right header h3 {
   margin-left: 10px;
+}
+
+.right .bordeArriba {
+  border-top: 10px solid #378fc3;
 }
 .separador {
   border-top: 10px solid #378fc3;
@@ -99,7 +103,6 @@ ul {
   border-collapse: collapse;
   height: 320px;
   margin: auto;
-  max-width: 600px;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -137,7 +140,7 @@ tr {
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
 
-tr:hover td {
+td.text-left:hover {
   background:#4E5066;
   color:#FFFFFF;
   border-top: 1px solid #22262e;
@@ -155,9 +158,8 @@ tr:last-child {
 tr:nth-child(odd) td {
   background:#EBEBEB;
 }
-
-tr:nth-child(odd):hover td {
-  background:#4E5066;
+tr:nth-child(odd) td:hover {
+  background: #4E5066;
 }
 
 tr:last-child td:first-child {
@@ -185,6 +187,7 @@ td:last-child {
 
 th.text-left {
   text-align: left;
+  background: #292b2c
 }
 
 th.text-center {
